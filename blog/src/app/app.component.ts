@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   myName = "";
   name = "Prodip";
+  show = true;
+  color = "red";
   getEvent(evt: any) {
     this.myName = evt;
     console.log(evt);

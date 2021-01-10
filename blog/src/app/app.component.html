@@ -22,3 +22,20 @@
 <input type="text" disabled={{disableVale}} value={{name}}> <!-- Interpolation-->
 
 <button (click)="clickMe()">Press Enable</button>
+
+<h1 *ngIf="show else elseBlock">
+    if Block
+</h1>
+<ng-template #elseBlock>
+   <h1> else block</h1>
+</ng-template>
+
+<ng-template [ngIf]="color=='red'">
+    <h1>Red</h1>
+</ng-template>
+<ng-template [ngIf]="color=='green'">
+    <h1>Red</h1>
+</ng-template>
+<ng-template [ngIf]="color=='blue'">
+    <h1>Red</h1>
+</ng-template>
