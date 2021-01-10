@@ -57,3 +57,25 @@
        black
     </h2>
 </div>
+
+<div>
+    <h2>For Loop in Angular</h2>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+        <tr *ngFor="let item of data">
+            <td>{{item.name}}</td>
+            <td>{{item.age}}</td>
+        </tr>
+    </table>
+   
+</div><br><br>
+
+<form #myForm="ngForm" (ngSubmit)="getFormValue(myForm.value)">
+    <input type="text" ngModel name="name"><br><br>
+    <input type="email" ngModel name="email"><br><br>
+    <input type="password" ngModel name="password"><br><br>
+    <button type="submit">Submit</button>
+</form>

@@ -18,4 +18,31 @@ export class AppComponent {
   clickMe() {
     this.disableVale = false;
   }
+
+  data = [
+    {
+      name: 'Prodip',
+      age: 26
+    },
+    {
+      name: 'Anik',
+      age: 30
+    },
+    {
+      name: 'Salekin',
+      age: 30
+    },
+    {
+      name: 'Wali',
+      age: 35
+    },
+    {
+      name: 'Mamun',
+      age: 33
+    }
+  ];
+
+  getFormValue(v){
+    console.log(v);
+  }
 }
