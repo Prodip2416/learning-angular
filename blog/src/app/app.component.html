@@ -14,7 +14,7 @@
 <button (click)="getEvent(box5.value)">Get Value</button>
 <h2>{{myName}}</h2>
 
-<input type="text" (keyup)="getEvent($event.target.value)">
+<!-- <input type="text" (keyup)="getEvent($event.target.value)"> -->
 
 <h1>Property Binding</h1>
 
@@ -83,3 +83,12 @@
 <h1>Toggle Color</h1>
 <h2 [style.color]="err?'red':color">Color Property</h2>
 <button (click)="changeColor()">Click Here To Change Color</button>
+
+<h1 class="alert alert-danger">Bootstrap</h1>
+
+<p *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+  </p>
+  <p>
+    <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+  </p>
