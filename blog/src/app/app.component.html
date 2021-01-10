@@ -1,3 +1,10 @@
 <h1>Angular</h1>
 
-<button (click)="getName(myName)">Get Name</button>
+<button (click)="getEvent('click event clicked.')">Get Name</button><br>
+<input type="text" (keyup)="getEvent('keyup event')" placeholder="keyup"><br>
+<input type="text" #box (keyup)="getEvent(box.value)" placeholder="keyup value "><br>
+<input type="text" (keydown)="getEvent('keyup event')" placeholder="keydown"><br>
+<input type="text" #box1 (keyup.space)="getEvent(box1.value)" placeholder="keyup.space"><br><br>
+<input type="text" #box2 placeholder="blur" (blur)="getEvent(box2.value)"><br>
+<br>
+<h2 style="background-color: aqua;" (mouseleave)="getEvent('mouseleave event')">Mouse event</h2>
