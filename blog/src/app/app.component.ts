@@ -6,17 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog';
-  name = 'Prodip';
-  getFullName() {
-    return this.name + ' ' + 'Sarker';
+  myName = "Prodip";
+  getName(name) {
+    console.log('Hello, ' + name);
   }
-  arr = ['Anik', 'Salekin', 'Prodip'];
-  obj = {
-    name: 'Prodip',
-    age: 26,
-    email: 'prodip@gmail.com'
-  };
-
-  siteURL = window.location.href;
 }
