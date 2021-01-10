@@ -15,3 +15,10 @@
 <h2>{{myName}}</h2>
 
 <input type="text" (keyup)="getEvent($event.target.value)">
+
+<h1>Property Binding</h1>
+
+<input type="text" [disabled]="disableVale" [value]="name"> <!-- Property Binding -->
+<input type="text" disabled={{disableVale}} value={{name}}> <!-- Interpolation-->
+
+<button (click)="clickMe()">Press Enable</button>

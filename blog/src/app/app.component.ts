@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   myName = "";
+  name = "Prodip";
   getEvent(evt: any) {
     this.myName = evt;
     console.log(evt);
+  }
+  disableVale = true;
+  clickMe() {
+    this.disableVale = false;
   }
 }
