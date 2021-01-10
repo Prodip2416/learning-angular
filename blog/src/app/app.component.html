@@ -39,3 +39,21 @@
 <ng-template [ngIf]="color=='blue'">
     <h1>Red</h1>
 </ng-template>
+
+<div [ngSwitch]="color">
+    <h2 style="color: red;" *ngSwitchCase="'red'">
+        red
+    </h2>
+    <h2 style="color: green;" *ngSwitchCase="'green'">
+        green
+    </h2>
+    <h2 style="color: blue;" *ngSwitchCase="'blue'">
+        blue
+    </h2>
+    <h2 style="color: skyblue;" *ngSwitchCase="'skyblue'">
+        skyblue
+    </h2>
+    <h2 style="color: black;" *ngSwitchDefault>
+       black
+    </h2>
+</div>

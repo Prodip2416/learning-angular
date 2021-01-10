@@ -9,7 +9,7 @@ export class AppComponent {
   myName = "";
   name = "Prodip";
   show = true;
-  color = "red";
+  color = "green";
   getEvent(evt: any) {
     this.myName = evt;
     console.log(evt);
