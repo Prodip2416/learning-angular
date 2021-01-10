@@ -42,7 +42,12 @@ export class AppComponent {
     }
   ];
 
-  getFormValue(v){
+  getFormValue(v) {
     console.log(v);
+  }
+  color='green';
+  err = false;
+  changeColor() {
+    this.err = !this.err;
   }
 }

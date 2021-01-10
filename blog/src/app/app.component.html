@@ -79,3 +79,7 @@
     <input type="password" ngModel name="password"><br><br>
     <button type="submit">Submit</button>
 </form>
+
+<h1>Toggle Color</h1>
+<h2 [style.color]="err?'red':color">Color Property</h2>
+<button (click)="changeColor()">Click Here To Change Color</button>
