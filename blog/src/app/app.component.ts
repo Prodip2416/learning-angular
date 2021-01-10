@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  getEvent(evt: any){
+  myName = "";
+  getEvent(evt: any) {
+    this.myName = evt;
     console.log(evt);
   }
 }

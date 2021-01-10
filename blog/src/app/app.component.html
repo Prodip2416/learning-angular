@@ -8,3 +8,10 @@
 <input type="text" #box2 placeholder="blur" (blur)="getEvent(box2.value)"><br>
 <br>
 <h2 style="background-color: aqua;" (mouseleave)="getEvent('mouseleave event')">Mouse event</h2>
+
+
+<input type="text" name="" id="" #box5 >
+<button (click)="getEvent(box5.value)">Get Value</button>
+<h2>{{myName}}</h2>
+
+<input type="text" (keyup)="getEvent($event.target.value)">
