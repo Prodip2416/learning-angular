@@ -1,2 +1,13 @@
 <h1>Angular Service</h1>
-<h3>{{name}}</h3>
+<table border=1>
+  <tr>
+    <td>ID</td>
+    <td>Title</td>
+    <td>UserId</td>
+  </tr>
+<tr *ngFor="let item of data">
+  <td>{{item.id}}</td>
+  <td>{{item.title}}</td>
+  <td>{{item.userId}}</td>
+</tr>
+</table>
