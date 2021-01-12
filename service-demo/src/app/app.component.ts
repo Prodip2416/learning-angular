@@ -10,8 +10,8 @@ export class AppComponent {
   title = 'service-demo';
   name = '';
   constructor(private users: UsersService) {
-    const data = this.users.getData();
-    console.log(data);
-    this.name = data.name;
+    this.users.getData().subscribe(data => {
+      console.log(data);
+    });
   }
 }
