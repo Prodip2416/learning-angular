@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'template-driven-form';
+  userData = {
+    name: 'Prodip Sarker',
+    email: 'prodip@gmail.com',
+    password: 'pro'
+  }
   onSubmit(data) {
     console.table(data);
   }

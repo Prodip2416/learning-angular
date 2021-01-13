@@ -1,9 +1,9 @@
 <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
-  <input required #name="ngModel" type="text" class="form-control m-1 w-50" name="name" placeholder="Name" ngModel>
+  <input required #name="ngModel" type="text" class="form-control m-1 w-50" name="name" placeholder="Name" [ngModel]="userData.name">
   <span *ngIf="name.invalid && name.touched" class="error" >Name is required.</span><br>
   <input required #email="ngModel" type="email" class="form-control m-1 w-50" name="email" placeholder="Email" ngModel>
   <span *ngIf="email.invalid && email.touched" class="error">Email is required.</span><br>
-  <input required #password="ngModel"  pattern="[a-zA-Z ]*" type="password" class="form-control m-1 w-50" name="password" placeholder="Password" ngModel>
+  <input required #password="ngModel"  pattern="[a-zA-Z ]*" type="password" class="form-control m-1 w-50" name="password" placeholder="Password" [ngModel]="userData.password">
   <span *ngIf="password.invalid && password.touched" class="error">Password is not valid.</span><br>
   <input [disabled]="userForm.invalid" type="submit" class="form-control m-1 w-50 btn btn-primary" value="Submit">
 </form>
