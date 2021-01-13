@@ -1,6 +1,6 @@
 <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
-  <input type="text" name="name" placeholder="Name" ngModel><br><br>
-  <input type="email" name="email" placeholder="Email" ngModel><br><br>
-  <input type="password" name="password" placeholder="Password" ngModel><br><br>
-  <input type="submit" value="Submit">
+  <input type="text" class="form-control m-1 w-50" name="name" placeholder="Name" ngModel><br><br>
+  <input type="email" class="form-control m-1 w-50" name="email" placeholder="Email" ngModel><br><br>
+  <input type="password" class="form-control m-1 w-50" name="password" placeholder="Password" ngModel><br><br>
+  <input type="submit" class="form-control m-1 w-50 btn btn-primary" value="Submit">
 </form>
