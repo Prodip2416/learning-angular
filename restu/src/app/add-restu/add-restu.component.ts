@@ -10,7 +10,7 @@ import { RestuService } from '../restu.service';
 export class AddRestuComponent implements OnInit {
 
   constructor(private restu: RestuService) { }
-
+  alert = false;
   restuData = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
@@ -21,6 +21,11 @@ export class AddRestuComponent implements OnInit {
   onSubmit() {
     this.restu.saveRestu(this.restuData.value).subscribe((result) => {
       console.log('Result is here:' + result);
+      this.alert = true;
+      this.restuData.reset({});
     });
+  }
+  closeAlert() {
+    this.alert = false;
   }
 }
