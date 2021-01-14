@@ -17,4 +17,13 @@ export class ListRestuComponent implements OnInit {
     });
   }
 
+  deleteItem(id) {
+    this.restu.deleteRestu(id).subscribe(() => {
+      console.log('successfully deleted.');
+      this.restuCollection = this.restuCollection.filter(((item) => item.id !== id));
+    });
+  }
+  updateItem(id){
+    console.log(id);
+  }
 }

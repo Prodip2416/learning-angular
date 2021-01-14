@@ -14,45 +14,21 @@
     },
     {
       "name": "GFC",
-      "address": "Bonani",
-      "email": "test@bfc.com",
+      "email": "test@test.com",
+      "address": "Gulshan 2.",
       "id": 3
     },
     {
       "name": "Chillox",
-      "address": "Bonani",
-      "email": "test@bfc.com",
+      "email": "test@test.com",
+      "address": "Bonani, Ahmed Tower.",
       "id": 4
     },
     {
       "name": "Sultan's Dine",
-      "address": "Mirpur 1",
       "email": "test@bfc.com",
+      "address": "Mirpur 11",
       "id": 5
-    },
-    {
-      "name": "test",
-      "email": "test@gmail.com",
-      "address": "Bonani",
-      "id": 6
-    },
-    {
-      "name": "wsdfghn",
-      "email": "sdfghhhhhhhhh",
-      "address": "rrrrrrrrrrrrr",
-      "id": 7
-    },
-    {
-      "name": "new one",
-      "email": "new",
-      "address": "dgv",
-      "id": 8
-    },
-    {
-      "name": "Nayon ar biriyani",
-      "email": "sa",
-      "address": "Badda Link Road",
-      "id": 9
     }
   ]
 }

@@ -14,4 +14,13 @@ export class RestuService {
   saveRestu(data) {
     return this.http.post(this.url, data);
   }
+  deleteRestu(item) {
+    return this.http.delete(`${this.url}/${item}`);
+  }
+  getDataById(id) {
+    return this.http.get(`${this.url}/${id}`);
+  }
+  updateData(id, data) {
+    return this.http.put(`${this.url}/${id}`, data);
+  }
 }

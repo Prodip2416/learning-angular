@@ -16,7 +16,7 @@ const routes: Routes = [
     component: ListRestuComponent
   },
   {
-    path: 'update',
+    path: 'update/:id',
     component: UpdateRestuComponent
   },
   {
