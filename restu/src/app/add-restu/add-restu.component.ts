@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { RestuService } from '../restu.service';
 
 @Component({
   selector: 'app-add-restu',
@@ -8,7 +9,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class AddRestuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private restu: RestuService) { }
 
   restuData = new FormGroup({
     name: new FormControl(''),
@@ -17,8 +18,9 @@ export class AddRestuComponent implements OnInit {
   });
   ngOnInit(): void {
   }
-
   onSubmit() {
-    console.log(this.restuData.value);
+    this.restu.saveRestu(this.restuData.value).subscribe((result) => {
+      console.log('Result is here:' + result);
+    });
   }
 }

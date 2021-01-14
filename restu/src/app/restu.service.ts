@@ -6,8 +6,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RestuService {
   url = 'http://localhost:3000/restaurants';
-  constructor(private http: HttpClient) {}  
+  constructor(private http: HttpClient) { }
   getList() {
     return this.http.get(this.url);
+  }
+
+  saveRestu(data) {
+    return this.http.post(this.url, data);
   }
 }
