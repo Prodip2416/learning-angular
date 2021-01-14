@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RestuService } from '../restu.service';
 
 @Component({
   selector: 'app-list-restu',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListRestuComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private restu: RestuService) { }
+  restuCollection = [];
   ngOnInit(): void {
+    this.restu.getList().subscribe((result) => {
+      console.log(result);
+      this.restuCollection = result;
+    });
   }
 
 }
